@@ -81,6 +81,7 @@ a:hover,a:active,a:focus {
 	outline:0;
 }
 a img {
+	
 	border: 0;
 }
 /*--------------------------------------------------------------2.0 Responsive Grid--------------------------------------------------------------*/
@@ -614,6 +615,21 @@ a:active,a:focus {
 	display:block;
 	margin: 0 auto;
 }
+.center-text {
+    text-align: center; /* Centers text horizontally */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Makes sure it takes full height */
+    flex-direction: column; /* Stacks elements vertically */
+}
+.center-image {
+    display: block;
+    margin: 20px auto; /* Centers image horizontally */
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto;
+}
+
 /*--------------------------------------------------------------9.0 Clearings--------------------------------------------------------------*/
 .clear:before,.clear:after,.entry-content:before,.entry-content:after,.comment-content:before,.comment-content:after,.site-header:before,.site-header:after,.site-content:before,.site-content:after,.site-footer:before,.site-footer:after {
 	content:'';
@@ -623,7 +639,7 @@ a:active,a:focus {
 	clear:both;
 }
 .clear {
-	*zoom: 1;
+	zoom: 1;
 }
 /*--------------------------------------------------------------10.0 Widgets--------------------------------------------------------------*/
 .widget-area {
@@ -823,7 +839,7 @@ a.more-link {
 }
 /* 404 Page */
 .error-404 .widget,.error-404 .widget-title {
-	text-align:left;
+	text-align:center;
 	border: 0;
 }
 /* Go to top */
@@ -847,7 +863,7 @@ a.smoothup {
 }
 /*--------------------------------------------------------------11.4 Image--------------------------------------------------------------*/
 .blog .format-image .entry-thumbnail,.archive .format-image .entry-thumbnail,.single-post .format-image .entry-thumbnail {
-	display: none;
+	display: block;
 }
 /*--------------------------------------------------------------11.5 Comments--------------------------------------------------------------*/
 .comment-list {
@@ -931,8 +947,10 @@ a.smoothup {
 	display: block;
 }
 /*--------------------------------------------------------------14.0 Media--------------------------------------------------------------*/
-.page-content img.wp-smiley,.entry-content img.wp-smiley,.comment-content img.wp-smiley {
+.page-content img.wp-smiley,.entry-content 
+.wp-smiley,.comment-content img.wp-smiley {
 	border:none;
+	display: block; /* Treat the image as a block element */
 	margin-bottom:0;
 	margin-top:0;
 	padding: 0;
@@ -1075,7 +1093,7 @@ html[xmlns] .slides {
 }
 /* Direction Nav */
 .flex-direction-nav {
-	*height:0;
+	height:0;
 }
 .flex-direction-nav a {
 	text-decoration:none;
@@ -1166,7 +1184,7 @@ html[xmlns] .slides {
 	margin:0 6px;
 	display:inline-block;
 	zoom:1;
-	*display:inline;
+	display:inline;
 }
 .flex-control-paging li a {
 	width:11px;
@@ -1347,9 +1365,9 @@ a.button {
 }
 /* IE7 and IE6 hacks */
 .genericon {
-	*overflow:auto;
-	*zoom:1;
-	*display: inline;
+	overflow:auto;
+	zoom:1;
+	display: inline;
 }
 /* Post formats */
 .genericon-standard:before {
