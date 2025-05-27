@@ -620,7 +620,7 @@ a:active,a:focus {
     display: flex;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
-    height: 100vh; /* Makes sure it takes full height */
+    height: 30vh; /* Makes sure it takes full height */
     flex-direction: column; /* Stacks elements vertically */
 }
 .center-image {
@@ -1998,7 +1998,8 @@ ul.shortcode-archive li {
 	}
 }
 .page-template-template-portfolio .grid .entry-thumbnail img {
-	width:100%;
+	width: 300px;
+	height: 300px;
 	transition:all 0.4s;
 }
 .page-template-template-portfolio .grid .entry-thumbnail img:hover {
