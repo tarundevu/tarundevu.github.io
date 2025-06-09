@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LED Bails V2</title>
+<link rel='stylesheet' href='css/woocommerce-layout.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/woocommerce-smallscreen.css' type='text/css' media='only screen and (max-width: 768px)'/>
+<link rel='stylesheet' href='css/woocommerce.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,500,700%7CRoboto:400,500,700%7CHerr+Von+Muellerhoff:400,500,700%7CQuattrocento+Sans:400,500,700' type='text/css' media='all'/>
+<link rel='stylesheet' href='css/easy-responsive-shortcodes.css' type='text/css' media='all'/>
+</head>
+<body class="home page page-template page-template-template-portfolio page-template-template-portfolio-php">
+<div id="page">
+	<div class="container">
+		<header id="masthead" class="site-header">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="index.html" rel="home">Tarun's Portfolio</a></h1>
+			<h2 class="site-description">"Knowledge is the Greatest Wealth"</h2>
+		</div>
+		<nav id="site-navigation" class="main-navigation">
+		<button class="menu-toggle">Menu</button>
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+		<div class="menu-menu-1-container">
+			<ul id="menu-menu-1" class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Projects.html">Projects</a></li>
+			
+			</ul>
+		</div>
+		</nav>
+		</header>
+    <!-- #masthead -->
+    <div id="content" class="site-content">
+      <div id="primary" class="content-area single-portfolio">
+        <main id="main" class="site-main">
+        
+        <article class="portfolio hentry">
+        <header class="entry-header">
+        <div class="entry-thumbnail">
+          <img width="400" height="400"  src="images/bail 2 assembled.jpg"  class="attachment-post-thumbnail size-post-thumbnail wp-post-image center-image" alt="p1"/>
+        </div>
+		<p align="right"> Date: March 2025</p>
+        <h1 class="entry-title">LED Cricket Bails V2</h1>
+        <!-- <a class='portfoliotype' href='portfolio-category.html'>summer</a>
+        <a class='portfoliotype' href='portfolio-category.html'>woman</a>
+        <a class='portfoliotype' href='portfolio-category.html'>yellow</a> -->
+        </header>
+        <div class="entry-content" >
+          <p>
+            Improving on the previous iteration of my LED bails, I came up with a new design that would be more durable.
+            To recap, the issues faced were the inability to bond polypropylene and the unprotected circuitry. To tackle this, I thought maybe custom building the bails would be suitable.
+            I first thought of 3D printing, however, I was unable to find shops that printed transparent PLA, the closest I could find is PETG. Unfortunately,
+            After I printed it and drop tested it(Yes, it was painful to watch), the longer spigot tends to break off. I realized this did not occur with PLA. So, I thought of the next best option
+            which is epoxy resin. Casting resin is a very messy and time consuming process but I continued with it as I had no other option. As for the circuitry, I designed a 3D printed 
+            holder with a suspension-like feature that would hopefully reduce the impact from falls and protect the circuit. Also, I replaced the reed switches with the A3144 hall sensors.
+          </p>
+          <h3>Circuit</h3>
+		  <img width="400" height="300" class="center-image"  src="images/LED bails circuit v2.png"/>
+		  <p>This is the schematic for the imporoved bails. The positive side of the battery is connected to the LEDs and two 10K ohm pullup resistors which in turn are connected to the bases of the transistors. 
+			The LEDs are then connected to the collector of the first transistor and the collector of the second transistor is connected to the emitter of the first. 
+            The hall sensors are connected to power, ground and each of the transistors. Unlike the old design, this one uses two transistors that act as an AND gate with the hall sensors as input.
+		  </p>
+		  <h3>Bail Body</h3>
+		  <img width="300" height="300" class="center-image"  src="images/bail 2 resin disassembled.jpg"/>
+          <img width="300" height="300" class="center-image"  src="images/bail 2 resin assembled.jpg"/>
+		  <p>This is the new body, it has been casted from epoxy resin. I first 3D printed the bails and casted them in silicone to create a mold. Then I injected epoxy resin into the mold to create
+			the bail's body. 
+		  </p>
+		  <h3>Electronics</h3>
+          <img width="300" height="300" class="center-image"  src="images/Screenshot 2025-06-06 174812.png"/>
+		  <p>These are the 3D printed parts that make up the circuitry holder. It is designed to be easily printed and assembled using just glue. The circular parts are 
+			the "suspension" that would help to keep the circuitry from making contact with the body.
+		  </p>
+		  <img width="300" height="300" class="center-image"  src="images/bail 2 circuit holder.jpg"/>
+		  <img width="300" height="300" class="center-image"  src="images/bail 2 circuit holder 2.jpg"/>
+		  <p>Above shown are the front and back views of the circuit assembly. The sensors now have a dedicated holder.
+		  </p>
+		  <h3>Improvements</h3>
+		  <p> After casting the bails, I found out that they are soft, I thought they would be much harder. I re-casted them thinking that I might have
+			not mixed the resin properly or messed up the ratio. They came out better but still soft for my standards. I decided to test it out and see if it functions.
+			After testing, the spigot broke off again. I am unsure of why the casted parts were not hard as when I have casted trial items from the same batch, they were perfect.
+			Perhaps it has to do with my trial items being exposed to air so the bubbles escaped easily. I might have to explore other methods to build the body.
+		  </p>
+        </div>
+        </article>
+        
+        <nav class="navigation post-navigation" role="navigation">
+          <h1 class="screen-reader-text">Post navigation</h1>
+          <div class="nav-links">
+          <div class="nav-previous">
+          <a href="mecanumrobot.html" rel="prev"> <span class="meta-nav">←</span> Back</a>
+          </div>
+          <div class="nav-next">
+          <a href="" rel="next">Next <span class="meta-nav">→</span></a>
+          </div>		
+          </div>
+        </nav>
+        <!-- .navigation -->
+        
+        </main>
+				<!-- #main -->
+			</div>
+			<!-- #primary -->
+			
+			
+		</div>
+		<!-- #content -->
+	</div>
+	<!-- .container -->
+	<footer id="colophon" class="site-footer">
+	<div class="container">
+		<div class="site-info">
+			<h1 style="font-family: 'Herr Von Muellerhoff';color: #ccc;font-weight:300;text-align: center;margin-bottom:0;margin-top:0;line-height:1.4;font-size: 46px;">Tarun's Portfolio</h1>
+			 <a target="blank" href="https://www.wowthemes.net/">&copy; Moschino - Free HTML Template by WowThemes.net</a>
+		</div>
+	</div>	
+	</footer>
+	<a href="#top" class="smoothup" title="Back to top"><span class="genericon genericon-collapse"></span></a>
+</div>
+<!-- #page -->
+<script src='js/jquery.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/scripts.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
+</body>
+</html>
